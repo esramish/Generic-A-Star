@@ -5,7 +5,7 @@ class AStarableI:
     def __eq__(self, __o: object) -> bool:
         pass
 
-    def __hash__(self):
+    def __hash__(self) -> int:
         pass
     
     def is_valid(self) -> bool:

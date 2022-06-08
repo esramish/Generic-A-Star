@@ -20,11 +20,11 @@ class Point2D(AStarableI):
     def __eq__(self, __o: object) -> bool:
         return self.x == __o.x and self.y == __o.y
     
-    def __hash__(self):
+    def __hash__(self) -> int:
         # return self.x + self.grid_width * self.y
         return hash(str(self))
     
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f"({self.x}, {self.y})"
     
     def is_valid(self) -> bool:
